@@ -188,17 +188,23 @@
 
 <style>
     .contact-info {
-        list-style-type: none; /* Remove os pontos de lista */
-        padding: 0; /* Remove o espaçamento interno padrão da lista */
+        list-style-type: none;
+        padding: 0;
     }
 
     .contact-info li {
-        margin-bottom: 10px; /* Ajuste conforme necessário para o espaçamento desejado entre as informações */
+        margin-bottom: 10px;
     }
 
     .contact-info strong {
-        display: inline-block; /* Permite ajustar a largura do strong para alinhamento */
-        width: 80px; /* Ajuste conforme necessário para o alinhamento desejado entre o ícone e o texto */
+        display: inline-block;
+        width: 80px;
+    }
+
+    .contact-info a {
+        text-decoration: none; /* Remove o sublinhado do link */
+        display: inline-block; /* Para alinhar com o strong */
+        margin-top: 5px; /* Ajuste conforme necessário para o espaçamento entre o strong e o link */
     }
 </style>
 
@@ -225,6 +231,7 @@
         </div>
     </div>
 </section>
+
 
 <!-- SCRIPTS -->
 <script src="js/jquery.js"></script>
