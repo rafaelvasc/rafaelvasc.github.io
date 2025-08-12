@@ -1,261 +1,236 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rafael Vasconcellos — Analista de Dados & Power BI</title>
+  <meta name="description" content="Currículo online de Rafael Vasconcellos — Analista de Dados especializado em Power BI, DAX e modelagem de dados.">
+  <meta name="author" content="Rafael Vasconcellos">
 
-<meta charset="UTF-8">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Rafael Vasconcellos — Analista de Dados & Power BI">
+  <meta property="og:description" content="Portfolio e currículo — Power BI, DAX, M, Modelagem de Dados, Dashboards.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/profile-image.jpg">
+  <meta property="og:url" content="https://rafaelvasc.github.io/">
 
-<title> Rafael Vasconcellos | Consultor Power BI </title>
+  <style>
+    :root{
+      --bg:#0f1115;
+      --card:#151822;
+      --muted:#9aa4b2;
+      --text:#e8ecf1;
+      --accent:#79b8ff;
+      --chip:#1d2230;
+      --border:#252b3a;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+      color:var(--text);
+      background:radial-gradient(1200px 800px at 80% -10%, #1a2030 0%, var(--bg) 60%);
+      line-height:1.6;
+    }
+    a{color:var(--accent); text-decoration:none}
+    a:hover{text-decoration:underline}
+    .wrap{max-width:1100px; margin:0 auto; padding:28px}
+    header{
+      display:grid; gap:24px;
+      grid-template-columns: 120px 1fr;
+      align-items:center;
+      padding:24px; border:1px solid var(--border); border-radius:18px;
+      background:linear-gradient(180deg, rgba(255,255,255,.02), rgba(255,255,255,0));
+      box-shadow:0 10px 30px rgba(0,0,0,.25);
+    }
+    .avatar{
+      width:120px;height:120px;border-radius:16px;object-fit:cover;border:1px solid var(--border);
+      background:#0b0d13;
+    }
+    .title h1{margin:0; font-size:28px; letter-spacing:.2px}
+    .title p{margin:6px 0 0; color:var(--muted)}
+    .links{display:flex; gap:16px; flex-wrap:wrap; margin-top:12px}
+    .btn{
+      display:inline-flex; align-items:center; gap:10px;
+      padding:10px 14px; border:1px solid var(--border); border-radius:10px;
+      background:var(--chip); color:var(--text); text-decoration:none; font-weight:600;
+    }
+    .btn:hover{border-color:#3a4258}
+    main{display:grid; grid-template-columns: 320px 1fr; gap:24px; margin-top:28px}
+    @media (max-width: 920px){ main{grid-template-columns:1fr} header{grid-template-columns:80px 1fr} .avatar{width:80px;height:80px} }
+    .card{background:var(--card); border:1px solid var(--border); border-radius:18px; padding:20px}
+    .card h2{font-size:16px; margin:0 0 12px; letter-spacing:.4px; text-transform:uppercase; color:var(--muted)}
+    .stack{display:flex; flex-wrap:wrap; gap:10px}
+    .chip{background:var(--chip); border:1px solid var(--border); color:var(--text); padding:8px 10px; border-radius:999px; font-size:13px}
+    .list{display:grid; gap:16px}
+    .item h3{margin:0; font-size:16px}
+    .item .meta{color:var(--muted); font-size:13px; margin:4px 0 8px}
+    .item p{margin:0}
+    .grid{display:grid; gap:24px}
+    .grid.two{grid-template-columns:1fr 1fr}
+    @media (max-width: 920px){ .grid.two{grid-template-columns:1fr} }
+    footer{margin:28px 0 8px; color:var(--muted); text-align:center; font-size:13px}
+    .small{font-size:12px; color:var(--muted)}
+    /* Section separators */
+    .section{display:grid; gap:10px}
+    .section h2{margin-top:0}
+  </style>
 
-<meta http-equiv="X-UA-Compatible" content="IE=Edge">
-<meta name="description" content="Portifólio Rafael Vasconcellos">
-<meta name="keywords" content="Analista de dados, power bi, freelancer power bi, power bi developer, power bi desenvolvedor">
-<meta name="autor" content="Rafael Vasconcellos">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-<link rel="stylesheet" href="css/bootstrap.min.css">
-<link rel="stylesheet" href="css/animate.css">
-<link rel="stylesheet" href="css/magnific-popup.css">
-<link rel="stylesheet" href="css/font-awesome.min.css">
-
-<!-- Main css -->
-<link rel="stylesheet" href="css/style.css">
-
+  <!-- JSON-LD microdata -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Rafael Vasconcellos",
+    "jobTitle": "Analista de Dados / Power BI",
+    "email": "mailto:rafael.vasconcellos@outlook.com.br",
+    "url": "https://rafaelvasc.github.io/",
+    "image": "https://rafaelvasc.github.io/images/profile-image.jpg",
+    "sameAs": [
+      "https://www.linkedin.com/in/rafaelo-vasconcellos/",
+      "https://rafaelvasc.my.canva.site/cv-portfolio"
+    ],
+    "knowsAbout": ["Power BI","DAX","Linguagem M","SQL","Modelagem de Dados","Visualização de Dados"]
+  }
+  </script>
 </head>
-<body data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
+<body>
+  <div class="wrap">
+    <header>
+      <img class="avatar" src="images/profile-image.jpg" alt="Foto de perfil de Rafael Vasconcellos">
+      <div class="title">
+        <h1>Rafael Vasconcellos</h1>
+        <p>Analista de Dados • Power BI • DAX • Linguagem M</p>
+        <div class="links">
+          <a class="btn" href="mailto:rafael.vasconcellos@outlook.com.br">E-mail</a>
+          <a class="btn" href="tel:+5521981380902">Telefone</a>
+          <a class="btn" href="https://www.linkedin.com/in/rafaelo-vasconcellos/" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn" href="https://rafaelvasc.my.canva.site/cv-portfolio" target="_blank" rel="noopener">Portfólio</a>
+          <a class="btn" href="cv/Rafael_Vasconcellos_CV.pdf" target="_blank" rel="noopener">Baixar CV (PDF)</a>
+        </div>
+      </div>
+    </header>
 
-<!-- PRE LOADER -->
-<div class="preloader">
-     <div class="spinner">
-          <span class="spinner-rotate"></span>
-     </div>
-</div>
+    <main>
+      <!-- Sidebar -->
+      <aside class="grid">
+        <section class="card section">
+          <h2>Sobre</h2>
+          <p>Profissional com experiência em <strong>vendas e CRM</strong> e especialização em <strong>Analytics & Business Intelligence</strong>. Atuo com <strong>Power BI</strong>, DAX e M, criando dashboards, automatizando relatórios e integrando múltiplas fontes de dados para gerar <em>insights</em> acionáveis.</p>
+        </section>
 
-
-<!-- NAVEGAÇÃO-->
-<div class="navbar custom-navbar navbar-fixed-top" role="navigation">
-     <div class="container">
-
-          <div class="navbar-header">
-               <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon icon-bar"></span>
-                    <span class="icon icon-bar"></span>
-                    <span class="icon icon-bar"></span>
-               </button>
-               <!-- lOGO TEXT HERE -->
-               <a href="index.html" class="navbar-brand"> Rafael Vasconcellos | Consultor Power BI </a>
+        <section class="card section">
+          <h2>Habilidades</h2>
+          <div class="stack">
+            <span class="chip">Power BI</span>
+            <span class="chip">DAX</span>
+            <span class="chip">Linguagem M</span>
+            <span class="chip">SQL</span>
+            <span class="chip">Modelagem de Dados</span>
+            <span class="chip">Storytelling com Dados</span>
+            <span class="chip">Tabular Editor</span>
+            <span class="chip">DAX Studio</span>
+            <span class="chip">Bravo</span>
+            <span class="chip">APIs</span>
+            <span class="chip">Azure / Fabric</span>
+            <span class="chip">Excel</span>
           </div>
+        </section>
 
-          <div class="collapse navbar-collapse">
-               <ul class="nav navbar-nav navbar-right">
-                    <li><a class="smoothScroll" href="#home">Home</a></li>
-                    <li><a class="smoothScroll" href="#about">Sobre</a></li>
-                    <li><a class="smoothScroll" href="#work">Portfólio</a></li>
-                    <li><a class="smoothScroll" href="#contact">Contato</a></li>
-               </ul>
-          </div>
-
-     </div>
-</div>
-
-
-<!-- HOME SECTION -->
-<section id="home">
-
-     <div class="container">
-          <div class="row">
-
-               <div class="col-md-offset-1 col-md-2 col-sm-3">
-                    <img src="images/profile-image.jpg" class="wow fadeInUp img-responsive img-circle" data-wow-delay="0.2s" alt="about image">
-               </div>
-
-               <div class="col-md-8 col-sm-8">
-                    <h1 class="wow fadeInUp" data-wow-delay="0.6s">Oi, Meu Nome é Rafael Vasconcellos e sou especialista em Power BI.</h1>
-                    <a href="https://1drv.ms/f/s!AsboDyybnj43wz7WSdjotvLdpz6D?e=Vh8FvZ" target="_blank" class="wow fadeInUp btn btn-default section-btn" data-wow-delay="1s">Download CV</a>
-               </div>
-
-          </div>
-     </div>
-</section>
-
-
-<!-- SOBRE SECTION -->
-<section id="about">
-     <div class="container">
-          <div class="row">
-
-               <div class="col-md-8 col-sm-12">
-                    <div class="wow fadeInUp section-title" data-wow-delay="0.6s">
-                         <h2>Sobre mim</h2>
-                         <p><strong>Analista de Dados | Consultor Power BI | Especialista em Power BI</strong></p>
-
-                         <p>Olá, sou Rafael, um apaixonado por análise de dados e Business Intelligence. Tenho 30 anos, sou casado e pai de um bebezinho chamado Miguel.</p>
-
-                         <p>Minha experiência abrange:</p>
-
-                         <ul>
-                             <li><strong>Vendas e CRM:</strong> Proficiência no funil de vendas, habilidades de negociação e uso de ferramentas como HubSpot, FrontApp e Callingly.</li>
-                             <li><strong>Formação Acadêmica:</strong> Graduado em Tecnologia em Análise e Desenvolvimento de Sistemas pela UNICSUL.</li>
-                             <li><strong>Pós-graduação em Analytics e BI:</strong> Atualmente diplomado especialista em Analytics e Business Intelligence na PUC Minas.</li>
-                             <li><strong>Especialização em Power BI:</strong> Comprometido em aperfeiçoar meu conhecimento e habilidades na ferramenta Power BI.</li>
-                             <li><strong>Consultoria em Análise de Dados:</strong> Experiência prática em consultoria, aplicando minhas habilidades em análise de dados para resolver desafios empresariais complexos.</li>
-                         </ul>
-
-                         <p>Estou em busca de oportunidades para aplicar meu conhecimento e paixão por dados, ajudando a transformar informações em insights estratégicos e impulsionando o sucesso dos negócios. Se você procura um profissional com habilidades sólidas em análise de dados e B.I, estou pronto para contribuir com sua equipe ou projeto.</p>
-                    </div>
-                   
-               </div>
-
-          </div>
-     </div>
-</section>
-
-<!-- SKILL SECTION -->
-<section id="skill">
-     <div class="container">
-          <div class="row">
-
-               <div class="col-md-12 col-sm-12">
-                    <div class="wow fadeInUp section-title" data-wow-delay="0.2s">
-                         <h2>Habilidades em BI</h2>
-                         <p>Desenvolvimento de painéis interativos e análise avançada de dados, com foco em extrair insights valiosos.</p>
-                         <p>Automação de relatórios e painéis para agilizar a geração de informações essenciais.</p>
-                         <p>Criação de visualizações dinâmicas e personalizadas para a apresentação de dados de maneira eficaz.</p>
-                         <p>Implementação de medidas e expressões DAX para cálculos complexos e análises avançadas.</p>
-                         <p>Integração de fontes de dados diversas para uma visão abrangente e integrada das informações.</p>
-                         <p>Construção de soluções de BI escaláveis e de alto desempenho.</p>
-                    </div>
-                
-               </div>
-
-               <div class="col-md-4 col-sm-12">
-                    <div class="skill-thumb">
-<ul class="social-icon">
-                    <li class="wow fadeInUp" data-wow-delay="0.8s"><a href="https://www.linkedin.com/in/rafaelo-vasconcellos/" class="fa fa-linkedin" target="_blank"></a></li>
-                </ul>
-                         <div class="wow fadeInUp" data-wow-delay="1s">
-                              <strong>Power BI</strong>
-                              <span class="pull-right">90%</span>
-                              <div class="progress">
-                                   <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"></div>
-                              </div>
-                         </div>
-<div class="wow fadeInUp" data-wow-delay="1s">
-                              <strong>Linguagem M</strong>
-                              <span class="pull-right">90%</span>
-                              <div class="progress">
-                                   <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"></div>
-                              </div>
-                         </div>
-<div class="wow fadeInUp" data-wow-delay="1s">
-                              <strong>DAX</strong>
-                              <span class="pull-right">90%</span>
-                              <div class="progress">
-                                   <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"></div>
-                              </div>
-                         </div>
-
-                         <div class="wow fadeInUp" data-wow-delay="1.2s">
-                              <strong>Colaboração em Ambientes Ágeis</strong>
-                              <span class="pull-right">100%</span>
-                              <div class="progress">
-                                   <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"></div>
-                              </div>
-                         </div>
- <div class="wow fadeInUp" data-wow-delay="1.2s">
-                              <strong>Resolução de Problemas</strong>
-                              <span class="pull-right">100%</span>
-                              <div class="progress">
-                                   <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"></div>
-                              </div>
-                         </div>
-
-                         <div class="wow fadeInUp" data-wow-delay="1.4s">
-                              <strong>SQL</strong>
-                              <span class="pull-right">80%</span>
-                              <div class="progress">
-                                   <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width: 75%;"></div>
-                              </div>
-                         </div>
-
-                         <div class="wow fadeInUp" data-wow-delay="1.4s">
-                              <strong>DAX Studio</strong>
-                              <span class="pull-right">80%</span>
-                              <div class="progress">
-                                   <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width: 75%;"></div>
-                              </div>
-                         </div>
-
-                         <div class="wow fadeInUp" data-wow-delay="1s">
-                              <strong>Comunicação Estratégica</strong>
-                              <span class="pull-right">100%</span>
-                              <div class="progress">
-                                   <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"></div>
-                              </div>
-                         </div>
-     
-                    </div>
-               </div>
-          </div>
-     </div>
-</section>
-
-
-<!-- PORTFOLIO SECTION -->
-<section id="work">
-     <div class="container">
-    <div class="row">
-
-        <div class="col-md-12 col-sm-12">
-            <div class="wow fadeInUp section-title" data-wow-delay="0.2s">
-                <h2>Portfólio</h2>
-                <p>Abaixo segue alguns reports desenvolvidos por mim.</p>
+        <section class="card section">
+          <h2>Contato</h2>
+          <div class="list">
+            <div class="item">
+              <div class="meta">E-mail</div>
+              <a href="mailto:rafael.vasconcellos@outlook.com.br">rafael.vasconcellos@outlook.com.br</a>
             </div>
-        </div>
-
-        <div class="wow fadeInUp col-md-12 col-sm-12" data-wow-delay="0.4s">
-            <!-- POWER BI EMBEDDED IFRAME -->
-            <iframe title="TCC Rafael O. de Vasconcellos" width="800" height="500" src="https://app.powerbi.com/view?r=eyJrIjoiZjg1MDMzNDUtYTZhYS00NmQxLTgxZjEtNTViMmI1NDRlYzFlIiwidCI6ImFiNzZiZDI2LTg1NTgtNGUwMC1iNzVlLTE0MTE2NjU3MGY5OCJ9" frameborder="0" allowFullScreen="true"></iframe>
-            <p>Projeto de Conclusão da Especialização em BI & Analytics pela PUC MINAS, base de dados da UFLA ( Universidade Federal de Lavras - MG) </p>
-        </div>
- <!-- POWER BI EMBEDDED IFRAME -->
-            <iframe title="Psicologos" width="800" height="500" src="https://app.powerbi.com/view?r=eyJrIjoiNGZkOTI2OGEtNTMzNS00NTNiLThiZDctZWE2ZTgyYWIyNWU3IiwidCI6ImFiNzZiZDI2LTg1NTgtNGUwMC1iNzVlLTE0MTE2NjU3MGY5OCJ9" frameborder="0" allowFullScreen="true"></iframe>
- <p>Projeto utilizando base semelhante ao doc de recebimento da PsicologiaViVa um dos maiores portais de psicologia online. </p>
-        </div>
-    </div>
-</div>
-
-</section>
-
-
-<!-- CONTATO SECTION -->
-<section id="contact">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-10 col-sm-12">
-                <div class="wow fadeInUp section-title" data-wow-delay="0.2s">
-                    <h2>Contato</h2>
-                    <p>Entre em contato comigo via e-mail ou através do LinkedIn:</p>
- <p><strong><i class="fa fa-envelope"></i> Email:</strong><a>rafael.vasconcellos@outlook.com.br</a></p>
-                       
-                        
-                            <p><strong><i class="fa fa-linkedin"></i> LinkedIn:</strong> <a href="https://www.linkedin.com/in/rafaelo-vasconcellos/" target="_blank">Rafael Vasconcellos</a> </p>
-                        
-                </div>
-               
+            <div class="item">
+              <div class="meta">Telefone</div>
+              <a href="tel:+5521981380902">+55 (21) 98138-0902</a>
             </div>
-        </div>
-    </div>
-</section>
+            <div class="item">
+              <div class="meta">Local</div>
+              <p>Rio de Janeiro — RJ • Remoto</p>
+            </div>
+          </div>
+          <p class="small">Dica: evite exibir endereço residencial completo por privacidade.</p>
+        </section>
+      </aside>
 
+      <!-- Main content -->
+      <section class="grid">
+        <section class="card section">
+          <h2>Experiência</h2>
+          <div class="list">
+            <div class="item">
+              <h3>Analista de Dados — Dataside</h3>
+              <div class="meta">Mar 2022 — Atual · Remoto</div>
+              <p>Dashboards interativos, automação de relatórios, DAX avançado e integração de fontes. Projetos com <strong>Ambev</strong>, <strong>LDC</strong>, <strong>Nitro</strong>, <strong>Lojas Renner</strong>, <strong>Grupo NotreDame Intermédica</strong>, <strong>Comerc Energia</strong> e <strong>Super Digital (Santander)</strong>.</p>
+            </div>
+            <div class="item">
+              <h3>Solutions Executive — Carupi</h3>
+              <div class="meta">Jul 2021 — Mar 2022 · Remoto</div>
+              <p>Vendas consultivas, CRM (HubSpot), funil de conversão e negociação.</p>
+            </div>
+            <div class="item">
+              <h3>Empreendedor — Oliverfit</h3>
+              <div class="meta">Mai 2017 — Set 2019 · RJ</div>
+              <p>Gestão de negócio de alimentação saudável e relacionamento com clientes.</p>
+            </div>
+          </div>
+        </section>
 
-<!-- SCRIPTS -->
-<script src="js/jquery.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/smoothscroll.js"></script>
-<script src="js/jquery.magnific-popup.min.js"></script>
-<script src="js/magnific-popup-options.js"></script>
-<script src="js/wow.min.js"></script>
-<script src="js/custom.js"></script>
+        <section class="grid two">
+          <section class="card section">
+            <h2>Formação</h2>
+            <div class="list">
+              <div class="item">
+                <h3>Pós-graduação — Analytics & Business Intelligence</h3>
+                <div class="meta">PUC Minas · 2021–2022</div>
+              </div>
+              <div class="item">
+                <h3>Tecnólogo — Análise e Desenvolvimento de Sistemas</h3>
+                <div class="meta">UNICSUL · 2019–2021</div>
+              </div>
+            </div>
+          </section>
 
+          <section class="card section">
+            <h2>Certificações (seleção)</h2>
+            <ul class="list">
+              <li class="item"><p>Power BI Experience (Xperiun) · 2023</p></li>
+              <li class="item"><p>Storytelling e Design de Dashboards (SideSchool) · 2023</p></li>
+              <li class="item"><p>Databricks Lakehouse Fundamentals · 2024</p></li>
+              <li class="item"><p>Microsoft Power BI para Data Science (DSA) · 2021</p></li>
+            </ul>
+            <p class="small">Versão completa no PDF.</p>
+          </section>
+        </section>
+
+        <section class="card section">
+          <h2>Projetos em Destaque</h2>
+          <div class="list">
+            <div class="item">
+              <h3>Dashboards de Performance Comercial</h3>
+              <p>Métricas de vendas, metas vs. realizado, e análises por produto/cliente. Uso de <strong>modelagem estrela</strong>, <strong>measures DAX</strong> reutilizáveis e <strong>RLS</strong>.</p>
+            </div>
+            <div class="item">
+              <h3>COGS & Logística</h3>
+              <p>Modelo de custos com cálculo de frete, ajustes por período e integração com ERP/APIs.</p>
+            </div>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <footer>
+      © <span id="year"></span> Rafael Vasconcellos — Disponível para projetos remotos (PJ)
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
